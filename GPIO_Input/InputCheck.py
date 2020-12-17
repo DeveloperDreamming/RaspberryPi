@@ -14,7 +14,7 @@ GPIO.setup(20,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 
 try:
   while 1:
-    if GPIO.input(20)==1:
+    if GPIO.input(20)==0:
       GPIO.output(16,0)
     else:
       GPIO.output(16,1)
