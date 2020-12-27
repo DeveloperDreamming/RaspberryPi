@@ -16,6 +16,7 @@ def switchPressed(channel):
 GPIO.add_event_detect(21, GPIO.RISING, callback=switchPressed)
 
 try:
+  GPIO.output(16,0)
   while 1:
     print(".")
     time.sleep(5)
