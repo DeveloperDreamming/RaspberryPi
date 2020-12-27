@@ -9,7 +9,7 @@ GPIO.setup(21,GPIO.IN,pull_up_down=GPIO.PUD_DOWN)
 def switchPressed(channel):
   print("Someone is Detected")
   GPIO.output(16,1)
-  time.sleep(1)
+  time.sleep(5)
   GPIO.output(16,0)
 
 
