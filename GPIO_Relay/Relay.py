@@ -9,6 +9,7 @@ try:
     GPIO.output(12,1)
     time.sleep(1)
     GPIO.output(12,0)
+    time.sleep(1)
  
 finally:
   GPIO.cleanup()
